@@ -502,12 +502,15 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, var(--accent-light), transparent 60%);
-}
+} 
 
 .avatar-shape {
-  width: 240px;
-  position: relative;
-  z-index: 1;
+position: relative;
+  width: 320px;
+  height: 380px;
+  border-radius: 40px;
+  overflow: hidden;
+
 }
 
 .float-badge {
@@ -1060,7 +1063,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .cv-avatar {
-  width: 48px; height: 48px;
+  width: 78px; height: 48px;
   background: linear-gradient(135deg, var(--accent), #a78bfa);
   border-radius: 14px;
   display: flex;
@@ -1121,8 +1124,16 @@ a { text-decoration: none; color: inherit; }
 /* ===========================
    FOOTER
 =========================== */
+:root {
+  --footer-bg: #193f8d;
+}
+
+[data-theme="dark"] {
+  --footer-bg: #08080f;
+}
+
 footer {
-  background: var(--text);
+  background: var(--footer-bg);
   padding: 40px;
 }
 
